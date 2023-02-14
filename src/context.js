@@ -14,7 +14,7 @@ const API_ENDPOINT = 'https://hn.algolia.com/api/v1/search?'
 const initialState = {
   isLoading:true,
   hits:[],
-  query:'react',//search دي بتاعه ال 
+  query:'react',
   page:0,
   nbPages:0
 }
@@ -28,7 +28,7 @@ const [state,dispatch]=useReducer(reducer,initialState)
 // fetchStories--------------------------------------------
 const fetchStories=async (url) =>{
 
-dispatch({type:SET_LOADING}) //دي بتاعه ال loading
+dispatch({type:SET_LOADING}) 
 
 try{
 
